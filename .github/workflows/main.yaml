@@ -57,6 +57,6 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/rpg-name-generator:latest
 
-    - name: Test with pytest
-      run: |
-        pytest
+    - name: Test with pyright
+      run:
+        pyright
