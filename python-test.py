@@ -18,7 +18,7 @@
 # # Only try to parse JSON if status is 200
 # if response.headers.get("Content-Type") == "application/json":
 #     try:
-#       print("JSON:", response.json())
+#         print("JSON:", response.json())
 #     except Exception as e:
 #         print("Failed to parse JSON:", e)
 # else:
@@ -33,7 +33,7 @@
 #     "power": "Flight",
 #     "city": "Metropolis",
 #     "age": 30,
-#     "is_active": True
+#     "is_active": True,
 # }
 
 # response = requests.post(url, json=data)
@@ -51,6 +51,7 @@
 #     print("Server did not return JSON.")
 
 # from pydantic import BaseModel
+
 
 # class Hero(BaseModel):
 #     name: str
